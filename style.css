@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.container{
+    maegin:0 auto;
+    max-width: 1440px;
+
+}
+.card-area-start{
+    background-color:aqua;
+    padding: 50px 0 50px 0;
+}
+.card{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+}
+.box{
+    background-color: aqua;
+    border: 5px solid; border-radius:30px;
+    padding: 30px;
+    border: radius 10px;
+
+}
+
+.box img{
+    width: 333px;
+    height: 400px;
+}
