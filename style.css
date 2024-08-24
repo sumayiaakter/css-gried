@@ -4,7 +4,7 @@
 
 }
 .container{
-    maegin:0 auto;
+    margin: 0 auto;
     max-width: 1440px;
 
 }
@@ -14,18 +14,36 @@
 }
 .card{
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-gap: 20px;
 }
 .box{
-    background-color: aqua;
-    border: 5px solid; border-radius:30px;
+    background-color: #ffffff77;
+    border: 5px solid rgb(49, 14, 247);
     padding: 30px;
-    border: radius 10px;
+    border-radius: 10px;
 
 }
 
-.box img{
-    width: 333px;
-    height: 400px;
+
+
+@media screen and (max-width: 1024px) {
+    .card{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media screen and (max-width: 768px) {
+    .card{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media screen and (max-width: 668px) {
+    .card{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 468px) {
+    .card{
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
